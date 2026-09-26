@@ -16,7 +16,7 @@
   },
   "dependencies": {
     "@prismicio/client": "^7.5.0",
-    "gsap": "npm:@gsap/shockingly@^3.12.4",
+    "gsap": "file:vendor/gsap-3.12.4.tgz",
     "howler": "^2.2.3",
     "lottie-web": "^5.12.2",
     "three": "^0.154.0",
