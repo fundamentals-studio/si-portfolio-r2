@@ -1,0 +1,239 @@
+/*------------------------------
+ 
+Roots
+ 
+------------------------------*/
+:root {
+  --si-white: #ffffff;
+  --si-grey: #e0e0e0;
+  --si-black: #232323;
+  --si-black2: #23232313;
+  --si-black3: #23232321;
+  --si-darkBrown: #2b1f18;
+  --si-background: #b6b6b6;
+  --size-8: 0.8vh;
+  --size-13: 1.3vh;
+  --size-21: 2.1vh;
+  --size-34: 3.4vh;
+  --size-55: 5.5vh;
+  --size-89: 8.9vh;
+  --size-144: 14.4vh;
+  --size-233: 23.3vh;
+  --size-377: 37.7vh;
+  --size-610: 61vh;
+  --size-987: 98.7vh;
+  --tp-base-background-color: #23232389;
+}
+
+/*------------------------------
+ 
+Base
+ 
+------------------------------*/
+
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  user-select: none;
+  font-family: nmMedium;
+  overscroll-behavior: none;
+  color: var(--si-darkBrown);
+  background-color: var(--si-white);
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.body-off {
+  background-color: var(--si-black);
+}
+
+/*------------------------------
+Visibility
+------------------------------*/
+.demo-reel,
+#is-content-wrapper {
+  visibility: hidden;
+}
+
+/*------------------------------
+Preloader
+------------------------------*/
+.preloader {
+  display: flex;
+}
+
+/*------------------------------
+Canvas
+------------------------------*/
+.canvas-embed {
+  pointer-events: none;
+}
+
+canvas {
+  width: 100vw;
+  height: 100vh;
+}
+
+/*------------------------------
+Awards
+------------------------------*/
+#awards-title-text {
+  display: flex;
+  flex-direction: row;
+  gap: 0.8vh;
+}
+
+.awards-close-area {
+  cursor: pointer;
+}
+
+.certicate-mask.shaban {
+  display: none;
+}
+
+.title-34-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+/*------------------------------
+Video
+------------------------------*/
+.wt-video-player {
+  width: 100%;
+  height: 100%;
+  background-color: #23232300;
+}
+
+/*------------------------------
+Images & Videos
+------------------------------*/
+.wt-work-video,
+.is-webgl-image {
+  opacity: 0;
+}
+
+/*------------------------------
+Pages
+------------------------------*/
+.page {
+  visibility: hidden;
+}
+
+/*------------------------------
+ 
+Media Queries
+ 
+------------------------------*/
+
+@media only screen and (max-width: 991px) {
+  /*------------------------------
+  Awrads
+  ------------------------------*/
+  #awards-title-text {
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+  }
+
+  /*------------------------------
+  Images & Videos
+  ------------------------------*/
+  .wt-work-video,
+  .is-webgl-image {
+    opacity: 1;
+  }
+
+  /*------------------------------
+  SplitText Mask
+  ------------------------------*/
+  .yLinesSplit,
+  .splitted-lines-mask {
+    overflow: hidden;
+    padding-bottom: 0px;
+  }
+
+  /*------------------------------
+  Video
+  ------------------------------*/
+  .wt-video-player {
+    width: 100%;
+    height: 100%;
+    /* background-color: var(--si-black); */
+  }
+}
+
+/*------------------------------
+ 
+Utilities
+ 
+------------------------------*/
+
+/*------------------------------
+SplitText Mask
+------------------------------*/
+.yLinesSplit,
+.splitted-lines-mask {
+  overflow: hidden;
+  padding-bottom: 0.5vh;
+}
+
+/*------------------------------
+GS Dev Tools
+------------------------------*/
+.gs-dev-tools {
+  z-index: 13000;
+}
+
+/*------------------------------
+Debug
+------------------------------*/
+.debug-red {
+  border: 3px solid red;
+}
+
+.debug-green {
+  border: 3px solid green;
+}
+
+.debug-black {
+  border: 3px solid var(--si-black);
+}
+
+/*------------------------------
+404
+------------------------------*/
+.sim-404 {
+  height: 100vh;
+}
+
+/*------------------------------
+Audio Options
+------------------------------*/
+.audio-options-wrapper {
+  visibility: hidden;
+  display: none;
+}
+
+/*------------------------------
+404 Origin Text
+------------------------------*/
+#sm-origin-text,
+#sm-service-text,
+#si-404-origin-text {
+  color: #2b1f18;
+}

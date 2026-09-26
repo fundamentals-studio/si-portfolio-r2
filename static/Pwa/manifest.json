@@ -1,0 +1,17 @@
+{
+  "name": "Shaban Iddrisu™",
+  "short_name": "Shaban Iddrisu™",
+  "start_url": "/",
+
+  "icons": [
+    {
+      "src": "/Assets/Favicon-512px.png",
+      "sizes": "512x512",
+      "purpose": "any maskable"
+    }
+  ],
+
+  "background_color": "#232323",
+  "theme_color": "#232323",
+  "display": "fullscreen"
+}

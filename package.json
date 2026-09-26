@@ -1,0 +1,27 @@
+{
+  "name": "vite-project",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --open",
+    "build": "vite build",
+    "preview": "vite preview --open",
+    "push": "git push -u origin main",
+    "deploy": "vercel --prod"
+  },
+  "devDependencies": {
+    "vite": "^4.1.0",
+    "vite-plugin-glsl": "^1.1.2"
+  },
+  "dependencies": {
+    "@prismicio/client": "^7.5.0",
+    "gsap": "npm:@gsap/shockingly@^3.12.4",
+    "howler": "^2.2.3",
+    "lottie-web": "^5.12.2",
+    "three": "^0.154.0",
+    "tweakpane": "^3.1.6",
+    "vercel": "^33.6.1",
+    "vite-plugin-html": "^3.2.2"
+  }
+}
